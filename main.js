@@ -88,7 +88,6 @@ resetButton.addEventListener("click", function(){
     reset();//calling our reset function below
 });
 
-
 /******************
  * RESET FUNCTION *
  ******************/
@@ -114,7 +113,6 @@ function reset(){
     meanD12.innerText = "N/A";
     meanD20.innerText = "N/A";
 }
-
 
 /****************************
  * CLICK HANDLING FUNCTIONS *
@@ -144,7 +142,7 @@ function d6RollFunction(){
     meanD6.innerText = getMean(sixes); // changing innerText of meanD6 to = mean of [numbers] utilizing getMean function
 }
 
-//roll function for 6 sidedd dice x2
+//roll function for 6 sided dice x2
 function dDoubleSixRollFunction(){
     let result1 = getRandomNumber(6);
     let result2 = getRandomNumber(6);
@@ -154,8 +152,7 @@ function dDoubleSixRollFunction(){
     imageDoubleD62.src = `./images/d6/${result2}.png`;
     doubleSixes.push(result1 + result2);
     console.log(doubleSixes);
-    meanDoubleD6.innerText = getMean(doubleSixes);
-        
+    meanDoubleD6.innerText = getMean(doubleSixes);      
 }
 
 //roll function for 12 sided die
